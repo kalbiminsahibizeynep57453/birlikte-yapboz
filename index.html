@@ -175,7 +175,7 @@ code{background:rgba(201,120,141,.12);padding:1px 5px;border-radius:5px;font-siz
 <div class="overlay" id="preview"><img class="pimg" id="previewImg" alt="Yapbozun tamamı"></div>
 
 <div class="overlay" id="done"><div class="card">
-  <h2>Birlikte tamamladınız</h2>
+  <h2>Birlikte tamamladık</h2>
   <p id="doneTxt"></p>
   <button class="btn" id="doneClose">Resmi seyret</button>
 </div></div>
@@ -835,7 +835,7 @@ $('#doneClose').onclick = () => { hide('#done'); fitView(); };
 
 function showDone(animate){
   if (doneShown) return; doneShown = true;
-  $('#doneTxt').textContent = total + ' parçanın hepsi yerinde. ' + (me || '') + ' ve ' + (partner || '') + ', bu resim artık sizin.';
+  $('#doneTxt').textContent = 'Ve sonunda bitti, birlikte başardık Bebekamın. Birlikte bitirdiğimiz için ödülümüz de ortak olmalı diye düşünüyorum 😘';
   show('#done');
   if (!animate) return;
   const box = document.createElement('div'); box.className = 'hearts';
